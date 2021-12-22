@@ -55,18 +55,25 @@ class MatrixGenerator:
                     print("Matrix A is equal to: {} , and Matrix B is equal to: {}. The product of the two matricies is equal to: \n {}".format(mat_1,mat_2,np.matmul(mat_1,mat_2)))
                     print("===========================================================================================================================")
                     time.sleep(0.1)
+    
+    @staticmethod
+    def prime_factors(n):
+        i = 2
+        factors = []
+        while i * i <= n:
+            if n % i:
+                i += 1
+            else:
+                n //= i
+                factors.append(i)
+        if n > 1:
+            factors.append(n)
+        return factors 
 
     @staticmethod
     def check_is_commutable(a,b):
         """Simple function to check if two matricies are commutable"""
         if np.array_equal(np.matmul(a,b),np.matmul(b,a)):
-            
-            
-            
-            
-            
-            
-            
             return True
         else:
             return False
