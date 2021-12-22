@@ -60,6 +60,13 @@ class MatrixGenerator:
     def check_is_commutable(a,b):
         """Simple function to check if two matricies are commutable"""
         if np.array_equal(np.matmul(a,b),np.matmul(b,a)):
+            
+            
+            
+            
+            
+            
+            
             return True
         else:
             return False
