@@ -56,6 +56,13 @@ class MatrixGenerator:
                     print("===========================================================================================================================")
                     time.sleep(0.1)
     
+    
+    
+    @staticmethod
+    def factor_decomposition(factors):
+        """Returns the factors of a number in the form XxYxZ I.e: 9 = 3x3"""
+        return "x".join(factors)
+    
     @staticmethod
     def prime_factors(n):
         i = 2
