@@ -52,7 +52,7 @@ class MatrixGenerator:
                 #check that the two matricies are commutable
                 if (MatrixGenerator.check_is_commutable(mat_1,mat_2)):
                     print("Matricies discovered!")
-                    print("Matrix A is equal to: {} , and Matrix B is equal to: {}".format(mat_1,mat_2))
+                    print("Matrix A is equal to: {} , and Matrix B is equal to: {}. The product of the two matricies is equal to: \n {}".format(mat_1,mat_2,np.matmul(mat_1,mat_2)))
                     print("===========================================================================================================================")
                     time.sleep(0.1)
 
